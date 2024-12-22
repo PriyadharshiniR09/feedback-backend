@@ -1,3 +1,5 @@
+require('dotenv').config();  // Ensure this line is at the top of the file
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -6,8 +8,8 @@ const reviewRoutes = require('./routes/reviewRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// MongoDB connection URL
-const MONGODB_URL = "mongodb+srv://22cst024:cOtKT2fYTVqSFfOA@cluster0.6c9bg.mongodb.net/";
+// MongoDB connection URL from environment variable
+const MONGODB_URL = process.env.MONGODB_URL;
 
 // Middleware setup
 app.use(cors());
