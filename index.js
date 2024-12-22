@@ -4,11 +4,10 @@ const cors = require('cors');
 const reviewRoutes = require('./routes/reviewRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT||5000;
 
 // MongoDB connection URL
-const MONGODB_URL="mongodb+srv://22cst024:cOtKT2fYTVqSFfOA@cluster0.6c9bg.mongodb.net/
- ";
+const MONGODB_URL="mongodb+srv://22cst024:cOtKT2fYTVqSFfOA@cluster0.6c9bg.mongodb.net/";
 
 // Middleware setup
 app.use(cors());
