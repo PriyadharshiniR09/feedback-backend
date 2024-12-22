@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // MongoDB connection URL
-const MONGODB_URL = "mongodb+srv://22cst024:cOtKT2fYTVqSFfOA@cluster0.6c9bg.mongodb.net/";
+const MONGODB_URL=" ";
 
 // Middleware setup
 app.use(cors());
