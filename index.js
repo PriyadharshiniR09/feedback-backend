@@ -1,4 +1,4 @@
-require('dotenv').config();  // Ensure this line is at the top of the file
+require('dotenv').config();  // Add this line to load environment variables
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 // MongoDB connection URL from environment variable
 const MONGODB_URL = process.env.MONGODB_URL;
 
+// Middleware setup
 app.use(cors());
 app.use(express.json());
 
